@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>For You, My Love ♡</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet"
+    />
+</head>
+
+<body>
+
+    <!-- =========================================
+         BACKGROUND HEARTS
+    ========================================== -->
+
+    <div id="floating-hearts"></div>
+
+
+    <!-- =========================================
+         ENVELOPE SCREEN
+    ========================================== -->
+
+    <div id="envelope-container">
+
+        <img
+            src="Envelope.png"
+            alt="Envelope"
+            id="envelope"
+        />
+
+        <p>♡ Letter for You, My Love ♡</p>
+
+        <span class="click-hint">
+            click the envelope ♡
+        </span>
+
+    </div>
+
+
+    <!-- =========================================
+         MAIN LETTER CONTAINER
+    ========================================== -->
+
+    <div id="letter-container">
+
+        <div class="letter-window">
+
+
+            <!-- =====================================
+                 INTRO
+            ====================================== -->
+
+            <div
+                id="intro-screen"
+                class="screen"
+            >
+
+                <img
+                    src="cat_heart.gif"
+                    class="cat"
+                    alt="Cute cat"
+                />
+
+                <h1>I made something for you... ♡</h1>
+
+                <p class="small-text">
+                    So please take your time, okay?
+                </p>
+
+                <button
+                    class="text-button"
+                    id="intro-button"
+                >
+                    Continue ♡
+                </button>
+
+            </div>
+
+
+            <!-- =====================================
+                 STEP 1
+            ====================================== -->
+
+            <div
+                id="step-one"
+                class="screen"
+            >
+
+                <h1>
+                    Will you accept this letter?
+                </h1>
+
+                <img
+                    src="cat_heart.gif"
+                    class="cat"
+                    alt="Cute cat"
+                />
+
+                <div class="buttons">
+
+                    <img
+                        src="yes.png"
+                        class="btn yes-btn"
+                        id="first-yes"
+                        alt="Yes"
+                    />
+
+                    <div class="no-wrapper">
+
+                        <img
+                            src="no.png"
+                            class="btn no-btn"
+                            alt="No"
+                        />
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================
+                 YIPPEE
+            ====================================== -->
+
+            <div
+                id="yippee-screen"
+                class="screen"
+            >
+
+                <div class="celebration">
+
+                    <div class="confetti">♡</div>
+                    <div class="confetti">♥</div>
+                    <div class="confetti">♡</div>
+                    <div class="confetti">♥</div>
+                    <div class="confetti">♡</div>
+
+                </div>
+
+                <h1 class="yippee">
+                    YIPPEEEEE!!! ♡
+                </h1>
+
+                <img
+                    src="cat_dance.gif"
+                    class="cat dancing-cat"
+                    alt="Dancing cat"
+                />
+
+                <p class="small-text">
+                    I knew you'd say yes hehe.
+                </p>
+
+                <p class="small-text">
+                    Okay, okay... I have one more question.
+                </p>
+
+            </div>
+
+
+            <!-- =====================================
+                 STEP 2
+            ====================================== -->
+
+            <div
+                id="step-two"
+                class="screen"
+            >
+
+                <h1>
+                    Are you ready for the letter?
+                </h1>
+
+                <img
+                    src="cat_heart.gif"
+                    class="cat"
+                    alt="Cute cat"
+                />
+
+                <div class="buttons">
+
+                    <img
+                        src="yes.png"
+                        class="btn yes-btn"
+                        id="second-yes"
+                        alt="Yes"
+                    />
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================
+                 LETTER INTRO / SONG
+            ====================================== -->
+
+            <div
+                id="letter-intro"
+                class="screen"
+            >
+
+                <div class="music-note">
+                    ♫
+                </div>
+
+                <h1>
+                    Now playing...
+                </h1>
+
+                <p class="song-title">
+                    Sunset With You ♡
+                </p>
+
+                <p class="small-text">
+                    A little something I made for you.
+                </p>
+
+            </div>
+
+
+            <!-- =====================================
+                 LOVE LETTER
+            ====================================== -->
+
+            <div
+                id="love-letter"
+                class="screen letter-pages"
+            >
+
+                <!-- PAGE 1 -->
+
+                <div
+                    class="letter-page active"
+                    data-page="1"
+                >
+
+                    <h1>
+                        Dear my love, ♡
+                    </h1>
+
+                    <img
+                        src="sleepy catto.gif"
+                        class="small-cat"
+                        alt="Cute cat"
+                    />
+
+                    <div class="letter-content">
+
+                        <p>
+                            I don't really know where to start, 
+                            because there are so many things I want
+                            to tell you. All of this are pretty new to me, and I don't know if I can put all of it into words, but I want to try.
+                        </p>
+
+                        <p>
+                            But I guess I'll start with this:
+                            I'm really, really so so glad that I met you.
+                        </p>
+
+                        <p>
+                            Even though this little letter can never
+                            fully explain everything I feel,
+                            I hope these words can give you
+                            a small idea of just how much you mean to me.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAGE 2 -->
+
+                <div
+                    class="letter-page"
+                    data-page="2"
+                >
+
+                    <h1>
+                        How it all started ♡
+                    </h1>
+
+                    <div class="letter-content">
+
+                        <p>
+                            It's kind of funny how we met.
+                            Out of all the people in the world,
+                            somehow our paths crossed through a screen.
+                        </p>
+
+                        <p>
+                            We started as two people playing games online, I made you a minecraft house, and then we started talking.
+                            and somehow those conversations became something I started looking forward to.
+                        </p>
+                        <p>
+                             I found myself smiling at my phone more often,
+                             I also started breaking my sleep schedule just to talk to you, 
+                             and I realized that I was really enjoying our talks.
+                            
+                        </p>
+
+                        <p>
+                            Little by little, at the time I never expected, 
+                            you became someone incredibly special to me.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAGE 3 -->
+
+                <div
+                    class="letter-page"
+                    data-page="3"
+                >
+
+                    <h1>
+                        Things I love about you ♡
+                    </h1>
+
+                    <div class="letter-content">
+
+                        <p>
+                            I love the way you make me smile.
+                        </p>
+
+                        <p>
+                            I love how you can make ordinary
+                            conversations feel special.
+                        </p>
+
+                        <p>
+                            I love your patience, your kindness,
+                            and all those little things you probably
+                            don't even realize I notice.
+                            I also love how you make me feel safe and cared for,
+                            even when we're miles apart.
+                        </p>
+
+                        <p>
+                            Most of all, I love being able to be myself
+                            when I'm talking to you.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAGE 4 -->
+
+                <div
+                    class="letter-page"
+                    data-page="4"
+                >
+
+                    <h1>
+                        Things I want you to know ♡
+                    </h1>
+
+                    <div class="letter-content">
+
+                        <p>
+                            I might not always know the perfect thing
+                            to say, but I hope you know that I appreciate
+                            you more than I can explain.
+                        </p>
+
+                        <p>
+                            Thank you for all the little moments,
+                            all the conversations, all the laughter,
+                            and all the times you've made my days better.
+                        </p>
+
+                        <p>
+                            You have become such an important part
+                            of my life, and I'm really grateful for you.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAGE 5 -->
+
+                <div
+                    class="letter-page"
+                    data-page="5"
+                >
+
+                    <h1>
+                        Even from miles away... 🌙
+                    </h1>
+
+                    <div class="letter-content">
+
+                        <p>
+                            I know being far away from each other
+                            isn't always easy.
+                        </p>
+
+                        <p>
+                            There are days when I wish I could simply
+                            be beside you instead of talking through
+                            a screen.
+                        </p>
+
+                        <p>
+                            But even with all these miles between us,
+                            you still manage to make me feel close to you.
+                        </p>
+
+                        <p>
+                            Distance may be part of our story right now,
+                            but it doesn't make what I feel for you
+                            any less real.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAGE 6 -->
+
+                <div
+                    class="letter-page"
+                    data-page="6"
+                >
+
+                    <h1>
+                        Until we finally meet ♡
+                    </h1>
+
+                    <div class="letter-content">
+
+                        <p>
+                            More calls.
+                        </p>
+
+                        <p>
+                            More late-night conversations.
+                        </p>
+
+                        <p>
+                            More good mornings and good nights.
+                        </p>
+
+                        <p>
+                            More moments we haven't experienced yet.
+                        </p>
+
+                        <p>
+                            And one day...
+                        </p>
+
+                        <p class="highlight-text">
+                            no more screens between us. ♡
+                        </p>
+
+                        <p>
+                            Until that day, I'll keep choosing you.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAGE CONTROLS -->
+
+                <div class="page-controls">
+
+                    <button
+                        id="previous-page"
+                        class="page-button"
+                    >
+                        ← Back
+                    </button>
+
+                    <span id="page-number">
+                        1 / 6
+                    </span>
+
+                    <button
+                        id="next-page"
+                        class="page-button"
+                    >
+                        Next →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================
+                 REASONS I LOVE YOU
+            ====================================== -->
+
+            <div
+                id="reasons-screen"
+                class="screen"
+            >
+
+                <h1>
+                    A few things I love about you ♡
+                </h1>
+
+                <p class="small-text">
+                    Click them. I have something to say.
+                </p>
+
+                <div class="reason-grid">
+
+                    <button class="reason-card">
+                        ♡ Your kindness
+                        <span>
+                            You have such a kind heart.
+                        </span>
+                    </button>
+
+                    <button class="reason-card">
+                        ♡ Your patience
+                        <span>
+                            Thank you for always being patient with me.
+                        </span>
+                    </button>
+
+                    <button class="reason-card">
+                        ♡ Your smile
+                        <span>
+                            It makes me want to smile too.
+                        </span>
+                    </button>
+
+                    <button class="reason-card">
+                        ♡ Your voice
+                        <span>
+                            I could listen to you for hours.
+                        </span>
+                    </button>
+
+                    <button class="reason-card">
+                        ♡ The little things
+                        <span>
+                            I notice more than you think I do.
+                        </span>
+                    </button>
+
+                    <button class="reason-card">
+                        ♡ Just you
+                        <span>
+                            Honestly... I just really love you.
+                        </span>
+                    </button>
+
+                </div>
+
+                <button
+                    id="reasons-next"
+                    class="text-button"
+                >
+                    There's more ♡
+                </button>
+
+            </div>
+
+
+            <!-- =====================================
+                 HIDDEN MESSAGES
+            ====================================== -->
+
+            <div
+                id="hidden-messages-screen"
+                class="screen"
+            >
+
+                <h1>
+                    A little something extra ♡
+                </h1>
+
+                <p class="small-text">
+                    Some hearts have secrets.
+                </p>
+
+                <div class="secret-hearts">
+
+                    <button class="secret-heart">
+                        ♡
+                        <span>
+                            I wish I could hug you right now.
+                        </span>
+                    </button>
+
+                    <button class="secret-heart">
+                        ♡
+                        <span>
+                            Here's a kiss because I can't give you one right now. MWAAAA
+                        </span>
+                    </button>
+
+                    <button class="secret-heart">
+                        ♡
+                        <span>
+                            You're probably smiling right now. Hehehe.
+                        </span>
+                    </button>
+
+                    <button class="secret-heart">
+                        ♡
+                        <span>
+                            Distance is temporary. You are worth waiting for.
+                        </span>
+                    </button>
+
+                    <button class="secret-heart">
+                        ♡
+                        <span>
+                            I love talking to you, even about the most random things.
+                        </span>
+                    </button>
+
+                    <button class="secret-heart">
+                        ♡
+                        <span>
+                            If I could teleport right now, I'd already be there.
+                        </span>
+                    </button>
+
+                </div>
+
+                <button
+                    id="hidden-next"
+                    class="text-button"
+                >
+                    One last thing... ♡
+                </button>
+
+            </div>
+
+
+            <!-- =====================================
+                 FINAL SURPRISE
+            ====================================== -->
+
+            <div
+                id="final-screen"
+                class="screen"
+            >
+
+                <div class="final-hearts">
+                    ♡ ♥ ♡ ♥ ♡
+                </div>
+
+                <h1>
+                    That's everything...
+                </h1>
+
+                <p class="small-text">
+                    ...actually, wait.
+                </p>
+
+                <p class="wait-text">
+                    I lied.
+                </p>
+
+                <img
+                    src="me.gif"
+                    class="cat dancing-cat"
+                    alt="Dancing cat"
+                />
+
+                <h1 class="final-love">
+                    I LOVE YOU. ♡
+                </h1>
+
+                <p class="small-text">
+                    Happy Boyfriend's Day, my love.
+                </p>
+
+                <p class="final-message">
+                    Thank you for being someone worth writing
+                    all of this for.
+                </p>
+
+                <p class="final-distance">
+                    Until the day we finally meet,
+                    I'll keep loving you from here. 
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         AUDIO
+    ========================================== -->
+
+    <audio
+        id="love-song"
+        src="Sunset_with_You.mp3"
+        loop
+    ></audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
