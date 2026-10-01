@@ -261,46 +261,36 @@ firstYes.addEventListener(
 // SECOND YES
 // =========================================
 
-secondYes.addEventListener(
-    "click",
-    () => {
+secondYes.addEventListener("click", () => {
 
-        // Start song after user clicks YES
-        loveSong.volume = 0;
+    // Start music at 0 volume
+    loveSong.volume = 0;
 
-        loveSong.play()
-            .then(() => {
+    loveSong.play()
+        .then(() => {
 
-                fadeInMusic();
+            fadeInMusic();
 
-            })
-            .catch((error) => {
+        })
+        .catch((error) => {
 
-                console.log(
-                    "Audio could not start:",
-                    error
-                );
+            console.log("Audio could not start:", error);
 
-            });
+        });
 
 
-        // Show music intro
-        showScreen(
-            letterIntro
-        );
+    // Show music intro
+    showScreen(letterIntro);
 
 
-        // Wait for music intro
-        setTimeout(() => {
+    // Wait for music intro
+    setTimeout(() => {
 
-            showScreen(
-                loveLetter
-            );
+        showScreen(loveLetter);
 
-        }, 3000);
+    }, 3000);
 
-    }
-);
+});
 
 
 // =========================================
@@ -311,28 +301,22 @@ function fadeInMusic() {
 
     let volume = 0;
 
-    const fade = setInterval(
-        () => {
+    const fade = setInterval(() => {
 
-            volume += 0.02;
+        volume += 0.02;
 
-            if (volume >= 1) {
+        if (volume >= 1) {
 
-                volume = 1;
+            volume = 1;
+            clearInterval(fade);
 
-                clearInterval(
-                    fade
-                );
+        }
 
-            }
+        loveSong.volume = volume;
 
-            loveSong.volume = volume;
+    }, 100);
 
-        },
-        100
-    );
 }
-
 // =========================================
 // LETTER PAGES
 // =========================================
