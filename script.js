@@ -26,8 +26,7 @@ const secondYes = document.getElementById(
     "second-yes"
 );
 
-const loveSong = document.getElementById(
-    "love-song"
+const loveSong = document.getElementById("love-song");
 );
 
 
