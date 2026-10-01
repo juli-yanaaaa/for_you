@@ -267,7 +267,7 @@ secondYes.addEventListener(
 
         // Start song
 
-        loveSong.volume = 0;
+        loveSong.volume = 5;
 
         loveSong.play()
             .then(() => {
