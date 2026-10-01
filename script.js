@@ -263,37 +263,41 @@ firstYes.addEventListener(
 
 secondYes.addEventListener(
     "click",
-    () => {
+    async () => {
 
-        // Start song
+        // Make sure the song starts from the beginning
+        loveSong.currentTime = 0;
 
-        loveSong.volume = 5;
+        // Start at a quiet volume
+        loveSong.volume = 0.01;
 
-        loveSong.play()
-            .then(() => {
+        try {
 
-                fadeInMusic();
+            await loveSong.play();
 
-            })
-            .catch((error) => {
+            console.log("Music started successfully!");
 
-                console.log(
-                    "Audio could not start:",
-                    error
-                );
+            fadeInMusic();
 
-            });
+        } catch (error) {
 
+            console.error(
+                "Music could not play:",
+                error
+            );
+
+            alert(
+                "The music could not play. Please check that Sunset_with_You.mp3 is in the same folder as index.html."
+            );
+
+        }
 
         // Show music intro
-
         showScreen(
             letterIntro
         );
 
-
         // Wait for music intro
-
         setTimeout(() => {
 
             showScreen(
@@ -304,8 +308,6 @@ secondYes.addEventListener(
 
     }
 );
-
-
 // =========================================
 // FADE IN MUSIC
 // =========================================
