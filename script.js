@@ -257,37 +257,22 @@ firstYes.addEventListener(
 
 
 // =========================================
-// SECOND YES
+// SECOND YES - TEST
 // =========================================
 
 secondYes.addEventListener("click", () => {
 
-    // Start music at 0 volume
-    loveSong.volume = 0;
+    console.log("YES WAS CLICKED");
+
+    loveSong.volume = 1;
 
     loveSong.play()
         .then(() => {
-
-            fadeInMusic();
-
+            console.log("MUSIC IS PLAYING");
         })
         .catch((error) => {
-
-            console.log("Audio could not start:", error);
-
+            console.error("MUSIC ERROR:", error);
         });
-
-
-    // Show music intro
-    showScreen(letterIntro);
-
-
-    // Wait for music intro
-    setTimeout(() => {
-
-        showScreen(loveLetter);
-
-    }, 3000);
 
 });
 
